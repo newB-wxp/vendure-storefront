@@ -1,0 +1,7 @@
+﻿▲ Next.js 16.2.1 (Turbopack)
+- Environments: .env
+- Cache Components enabled
+- Experiments (use with caution):
+  ✓ rootParams
+
+  Creating an optimized production build ...
