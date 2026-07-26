@@ -13,6 +13,23 @@ export const GetTopCollectionsQuery = graphql(`
     }
 `);
 
+export const GetAllCollectionsQuery = graphql(`
+    query GetAllCollections {
+        collections(options: { filter: { parentId: { eq: "1" } } }) {
+            items {
+                id
+                name
+                slug
+                description
+                featuredAsset {
+                    id
+                    preview
+                }
+            }
+        }
+    }
+`);
+
 export const GetActiveCustomerQuery = graphql(`
     query GetActiveCustomer {
         activeCustomer {

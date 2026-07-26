@@ -3,6 +3,7 @@ import {Suspense} from "react";
 import {getRouteLocale} from "@/i18n/server";
 import {HeroSection} from "@/components/layout/hero-section";
 import {FeaturedProducts} from "@/components/commerce/featured-products";
+import {CollectionGrid} from "@/components/commerce/collection-grid";
 import {SITE_NAME, SITE_URL, buildCanonicalUrl} from "@/lib/metadata";
 import {BadgeCheck, Tag, Zap} from "lucide-react";
 import {getTranslations} from 'next-intl/server';
@@ -46,6 +47,10 @@ export default async function Home() {
             <HeroSection/>
             <Suspense>
                 <FeaturedProducts/>
+            </Suspense>
+
+            <Suspense>
+                <CollectionGrid title={t('browseCollections')} columns={3} />
             </Suspense>
 
             <section className="py-16 md:py-24 bg-muted/30">

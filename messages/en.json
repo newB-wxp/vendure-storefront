@@ -28,6 +28,10 @@
     "description": "Discover high-quality products at competitive prices. Shop now for the best deals on electronics, fashion, home goods, and more.",
     "ogDescription": "Discover high-quality products at competitive prices. Shop now for the best deals.",
     "whyShopWithUs": "Why Shop With Us",
+    "browseCollections": "Browse Collections",
+    "allCollections": "All Collections",
+    "allCollectionsDescription": "Browse our complete collection of product categories. Find exactly what you need.",
+    "home": "Home",
     "features": {
       "highQuality": {
         "title": "High Quality",
